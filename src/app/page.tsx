@@ -119,7 +119,7 @@ export default function LandingPage() {
       features={[
         {
           title: "WeemDesk: Uzaktan Destek Sistemi",          description: "Canlı PC izleme, bağlantı tünelleri ve kapsamlı cihaz yönetimi ile uzaktan destek süreçlerinizi optimize edin.",          phoneOne: {
-            imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-looking-green-screen-monitor-smartphone-sitting-desk-business-office-late-night-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime_482257-13377.jpg",            imageAlt: "WeemDesk live PC monitoring interface"},
+            imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-looking-green-screen-monitor-smartphone-sitting-desk-business-office-late-night-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime_482257-13377.jpg",            imageAlt: "WeemDesk live PC monitoring interface"},
           phoneTwo: {
             imageSrc: "http://img.b2bpic.net/free-photo/abstract-techno-low-poly-background-with-dark-connecting-dots-lines_1048-6127.jpg",            imageAlt: "WeemDesk remote connection tunnel"}
         },
