@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FeatureCardTwelve from '@/components/sections/feature/FeatureCardTwelve';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import { Wifi, UploadCloud, Share2, Tunnel, Monitor, Network, Lock } from "lucide-react";
+import { Wifi, UploadCloud, Share2, Funnel, Monitor, Network, Lock } from "lucide-react";
 
 export default function WeemDeskPage() {
   return (
@@ -40,9 +40,9 @@ export default function WeemDeskPage() {
               {
                 name: "Contact",                id: "#contact"},
               {
-                name: "Platform",                href: "/platform"},
+                name: "Platform",                id: "/platform"},
               {
-                name: "WeemDesk",                href: "/weemdesk"}
+                name: "WeemDesk",                id: "/weemdesk"}
             ]}
             logoSrc="http://img.b2bpic.net/free-photo/blue-neon-light-dark-backdrop_23-2147881452.jpg"
             logoAlt="Weem Flow Logo"
