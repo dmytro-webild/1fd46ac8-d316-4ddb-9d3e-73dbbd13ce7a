@@ -57,7 +57,7 @@ export default function LandingPage() {
   <div id="home" data-section="home">
       <HeroSplitDualMedia
       background={{
-        variant: "sparkles-gradient"}}
+        variant: "glowing-orb"}}
       title="İş Akışının Yeni Merkezi"
       description="Weem Flow, destek yönetimi, uzaktan erişim, yapay zeka destekli operasyonlar ve ekip koordinasyonunu tek platformda birleştirir."
       tag="Geleceğin Operasyon Platformu"
@@ -81,7 +81,7 @@ export default function LandingPage() {
 
   <div id="ai-copilot" data-section="ai-copilot">
       <ProductCardTwo
-      animationType="opacity"
+      animationType="scale-rotate"
       textboxLayout="default"
       gridVariant="bento-grid"
       useInvertedBackground={true}
@@ -211,7 +211,7 @@ export default function LandingPage() {
       <ContactCTA
       useInvertedBackground={false}
       background={{
-        variant: "sparkles-gradient"}}
+        variant: "glowing-orb"}}
       tag="Geleceğe Hazır Olun"
       title="Operasyonlarınızı Geleceğe Taşıyın"
       description="Weem Flow ile iş süreçlerinizi yeniden tanımlayın, verimliliği artırın ve rekabette öne geçin."
@@ -219,6 +219,7 @@ export default function LandingPage() {
         {
           text: "Hemen Başlayın",          href: "#start"},
       ]}
+      buttonAnimation="slide-up"
     />
   </div>
 
