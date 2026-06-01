@@ -13,14 +13,14 @@ import { Activity, Sparkles, TrendingUp } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
-    { name: "Ana Sayfa", href: "/" },
-    { name: "Platform", href: "/platform" },
-    { name: "Çözümler", href: "/cozumler" },
-    { name: "WeemDesk", href: "/weemdesk" },
-    { name: "AI Copilot", href: "/ai-copilot" },
-    { name: "Entegrasyonlar", href: "/integrasyonlar" },
-    { name: "Fiyatlandırma", href: "/fiyatlandirma" },
-    { name: "Demo Talep Et", href: "/demo-talep-et" }
+    { name: "Ana Sayfa", id: "/" },
+    { name: "Platform", id: "/platform" },
+    { name: "Çözümler", id: "/cozumler" },
+    { name: "WeemDesk", id: "/weemdesk" },
+    { name: "AI Copilot", id: "/ai-copilot" },
+    { name: "Entegrasyonlar", id: "/integrasyonlar" },
+    { name: "Fiyatlandırma", id: "/fiyatlandirma" },
+    { name: "Demo Talep Et", id: "/demo-talep-et" }
   ];
 
   const footerColumns = [
@@ -94,9 +94,9 @@ export default function LandingPage() {
       ]}
       mediaItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg",          imageAlt: "Futuristic command center console with holographic interfaces"},
+          imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-looking-green-screen-monitor-smartphone-sitting-desk-business-office-late-night-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime_482257-13377.jpg",          imageAlt: "Futuristic command center console with holographic interfaces"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
+          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-on-water_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
       ]}
       mediaAnimation="opacity"
       rating={5}
