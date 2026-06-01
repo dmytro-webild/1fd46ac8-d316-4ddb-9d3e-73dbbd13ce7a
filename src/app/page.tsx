@@ -90,11 +90,11 @@ export default function LandingPage() {
       ]}
       mediaItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg?_wi=1",
           imageAlt: "Futuristic command center console with holographic interfaces",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg?_wi=1",
           imageAlt: "Vast 3D command center floating in deep space",
         },
         {
@@ -221,7 +221,7 @@ export default function LandingPage() {
             imageSrc: "http://img.b2bpic.net/free-photo/blurred-night-lights_23-2148139287.jpg",
             imageAlt: "Immersive video meeting environment",
           },
-          imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg?_wi=2",
           imageAlt: "futuristic remote PC monitoring UI",
         },
         {
@@ -235,7 +235,7 @@ export default function LandingPage() {
             imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-business-concept_53876-33533.jpg",
             imageAlt: "Workflow automation dashboard",
           },
-          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg?_wi=2",
           imageAlt: "futuristic remote PC monitoring UI",
         },
         {
