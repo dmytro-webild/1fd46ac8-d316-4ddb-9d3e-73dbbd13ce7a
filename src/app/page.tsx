@@ -71,7 +71,7 @@ export default function LandingPage() {
         {
           imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg",          imageAlt: "Futuristic command center console with holographic interfaces"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
+          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built- Lwater_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
       ]}
       mediaAnimation="opacity"
       rating={5}
@@ -211,7 +211,7 @@ export default function LandingPage() {
       <ContactCTA
       useInvertedBackground={false}
       background={{
-        variant: "glowing-orb"}}
+        variant: "sparkles-gradient"}}
       tag="Geleceğe Hazır Olun"
       title="Operasyonlarınızı Geleceğe Taşıyın"
       description="Weem Flow ile iş süreçlerinizi yeniden tanımlayın, verimliliği artırın ve rekabette öne geçin."
