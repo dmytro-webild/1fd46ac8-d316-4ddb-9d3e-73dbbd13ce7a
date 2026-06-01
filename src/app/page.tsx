@@ -8,12 +8,52 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
-import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import { Activity, Sparkles, TrendingUp } from "lucide-react";
 
 export default function LandingPage() {
+  const navItems = [
+    { name: "Ana Sayfa", href: "/" },
+    { name: "Platform", href: "/platform" },
+    { name: "Çözümler", href: "/cozumler" },
+    { name: "WeemDesk", href: "/weemdesk" },
+    { name: "AI Copilot", href: "/ai-copilot" },
+    { name: "Entegrasyonlar", href: "/integrasyonlar" },
+    { name: "Fiyatlandırma", href: "/fiyatlandirma" },
+    { name: "Demo Talep Et", href: "/demo-talep-et" }
+  ];
+
+  const footerColumns = [
+    {
+      title: "Ürün",      items: [
+        { label: "AI Copilot", href: "/ai-copilot" },
+        { label: "Özellikler", href: "#features" },
+        { label: "Analitik", href: "#analytics" },
+        { label: "Entegrasyonlar", href: "/integrasyonlar" }
+      ]
+    },
+    {
+      title: "Şirket",      items: [
+        { label: "Hakkımızda", href: "/hakkimizda" },
+        { label: "Kariyer", href: "/kariyer" },
+        { label: "Basın", href: "/basin" }
+      ]
+    },
+    {
+      title: "Destek",      items: [
+        { label: "Yardım Merkezi", href: "/yardim-merkezi" },
+        { label: "API Belgeleri", href: "/api-belgeleri" },
+        { label: "İletişim", href: "#contact" }
+      ]
+    },
+    {
+      title: "Yasal",      items: [
+        { label: "Gizlilik Politikası", href: "/gizlilik-politikasi" },
+        { label: "Hizmet Şartları", href: "/hizmet-sartlari" }
+      ]
+    }
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-stagger"
@@ -30,22 +70,7 @@ export default function LandingPage() {
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
-      navItems={[
-        {
-          name: "Home",          id: "#home"},
-        {
-          name: "AI Copilot",          id: "#ai-copilot"},
-        {
-          name: "Features",          id: "#features"},
-        {
-          name: "Analytics",          id: "#analytics"},
-        {
-          name: "Integrations",          id: "#integrations"},
-        {
-          name: "Testimonials",          id: "#testimonials"},
-        {
-          name: "Contact",          id: "#contact"},
-      ]}
+      navItems={navItems}
       logoSrc="http://img.b2bpic.net/free-photo/blue-neon-light-dark-backdrop_23-2147881452.jpg"
       logoAlt="Weem Flow Logo"
       brandName="Weem Flow"
@@ -79,37 +104,6 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="ai-copilot" data-section="ai-copilot">
-      <ProductCardTwo
-      animationType="opacity"
-      textboxLayout="default"
-      gridVariant="bento-grid"
-      useInvertedBackground={true}
-      carouselMode="buttons"
-      products={[
-        {
-          id: "ai-copilot-1",          brand: "Weem Flow",          name: "Akıllı Analiz",          price: "Anında",          rating: 5,
-          reviewCount: "500+ Yorum",          imageSrc: "http://img.b2bpic.net/free-photo/close-up-accounting-sales-statistics-computer-display_482257-122982.jpg",          imageAlt: "Futuristic smart analysis dashboard"},
-        {
-          id: "ai-copilot-2",          brand: "Weem Flow",          name: "Otomatik Raporlama",          price: "Hızlı",          rating: 5,
-          reviewCount: "450+ Yorum",          imageSrc: "http://img.b2bpic.net/free-vector/flat-design-minimal-technology-landing-page-template_23-2149167839.jpg",          imageAlt: "Futuristic automated reporting interface"},
-        {
-          id: "ai-copilot-3",          brand: "Weem Flow",          name: "Gerçek Zamanlı Destek",          price: "7/24",          rating: 5,
-          reviewCount: "600+ Yorum",          imageSrc: "http://img.b2bpic.net/free-photo/abstract-techno-low-poly-background-with-connecting-dots_1048-6125.jpg",          imageAlt: "Futuristic real-time support system"},
-        {
-          id: "ai-copilot-4",          brand: "Weem Flow",          name: "Proaktif Çözümler",          price: "Akıllı",          rating: 5,
-          reviewCount: "380+ Yorum",          imageSrc: "http://img.b2bpic.net/free-photo/representation-user-experience-interface-design_23-2150169842.jpg",          imageAlt: "Futuristic proactive solutions dashboard"},
-        {
-          id: "ai-copilot-5",          brand: "Weem Flow",          name: "Veri Entegrasyonu",          price: "Kusursuz",          rating: 5,
-          reviewCount: "520+ Yorum",          imageSrc: "http://img.b2bpic.net/free-photo/arab-professional-future-tech_482257-76229.jpg",          imageAlt: "Futuristic data integration visualization"},
-        {
-          id: "ai-copilot-6",          brand: "Weem Flow",          name: "Güvenli İşlem Yönetimi",          price: "Güvenli",          rating: 5,
-          reviewCount: "410+ Yorum",          imageSrc: "http://img.b2bpic.net/free-photo/cyber-security-analyst-command-center_23-2152000892.jpg",          imageAlt: "Futuristic secure transaction management UI"},
-      ]}
-      title="Akıllı Operasyonlarınızı Güçlendirin: AI Copilot"
-      description="Weem Flow'un gelişmiş yapay zeka destekli Copilot'u ile iş akışlarınızı otomatikleştirin, verileri anında analiz edin ve karar alma süreçlerinizi optimize edin."
-    />
-  </div>
 
   <div id="features" data-section="features">
       <FeatureCardNine
@@ -170,17 +164,6 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="integrations" data-section="integrations">
-      <SocialProofOne
-      textboxLayout="default"
-      useInvertedBackground={false}
-      names={[
-        "WhatsApp",        "ERP Sistemleri",        "VOIP Çözümleri",        "CRM Platformları",        "Google Workspace",        "Microsoft 365",        "Slack"]}
-      title="Tüm Uygulamalarınızla Kusursuz Entegrasyon"
-      description="Mevcut sistemlerinizle sorunsuz bir şekilde entegre olun ve operasyonlarınızı merkezileştirin."
-      speed={40}
-    />
-  </div>
 
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwo
@@ -229,48 +212,7 @@ export default function LandingPage() {
       logoSrc="http://img.b2bpic.net/free-photo/blue-neon-light-dark-backdrop_23-2147881452.jpg"
       logoAlt="Weem Flow Logo"
       logoText="Weem Flow"
-      columns={[
-        {
-          title: "Ürün",          items: [
-            {
-              label: "AI Copilot",              href: "#ai-copilot"},
-            {
-              label: "Özellikler",              href: "#features"},
-            {
-              label: "Analitik",              href: "#analytics"},
-            {
-              label: "Entegrasyonlar",              href: "#integrations"},
-          ],
-        },
-        {
-          title: "Şirket",          items: [
-            {
-              label: "Hakkımızda",              href: "#about"},
-            {
-              label: "Kariyer",              href: "#careers"},
-            {
-              label: "Basın",              href: "#press"},
-          ],
-        },
-        {
-          title: "Destek",          items: [
-            {
-              label: "Yardım Merkezi",              href: "#help"},
-            {
-              label: "API Belgeleri",              href: "#api-docs"},
-            {
-              label: "İletişim",              href: "#contact"},
-          ],
-        },
-        {
-          title: "Yasal",          items: [
-            {
-              label: "Gizlilik Politikası",              href: "#privacy"},
-            {
-              label: "Hizmet Şartları",              href: "#terms"},
-          ],
-        },
-      ]}
+      columns={footerColumns}
       copyrightText="© 2035 Weem Flow. Tüm hakları saklıdır."
     />
   </div>
