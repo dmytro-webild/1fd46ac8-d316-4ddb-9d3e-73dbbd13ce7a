@@ -42,7 +42,7 @@ export default function LandingPage() {
         {
           name: "Integrations",          id: "#integrations"},
         {
-          name: "Testimonial s",          id: "#testimonials"},
+          name: "Testimonials",          id: "#testimonials"},
         {
           name: "Contact",          id: "#contact"},
       ]}
@@ -57,7 +57,7 @@ export default function LandingPage() {
   <div id="home" data-section="home">
       <HeroSplitDualMedia
       background={{
-        variant: "glowing-orb"}}
+        variant: "sparkles-gradient"}}
       title="İş Akışının Yeni Merkezi"
       description="Weem Flow, destek yönetimi, uzaktan erişim, yapay zeka destekli operasyonlar ve ekip koordinasyonunu tek platformda birleştirir."
       tag="Geleceğin Operasyon Platformu"
@@ -71,7 +71,7 @@ export default function LandingPage() {
         {
           imageSrc: "http://img.b2bpic.net/free-photo/interior-nuclear-power-plant_23-2150957660.jpg",          imageAlt: "Futuristic command center console with holographic interfaces"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built- Lwater_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
+          imageSrc: "http://img.b2bpic.net/free-photo/futuristic-representation-city-built-water_23-2151048127.jpg",          imageAlt: "Vast 3D command center floating in deep space"}
       ]}
       mediaAnimation="opacity"
       rating={5}
@@ -81,7 +81,7 @@ export default function LandingPage() {
 
   <div id="ai-copilot" data-section="ai-copilot">
       <ProductCardTwo
-      animationType="scale-rotate"
+      animationType="opacity"
       textboxLayout="default"
       gridVariant="bento-grid"
       useInvertedBackground={true}
@@ -119,7 +119,7 @@ export default function LandingPage() {
       features={[
         {
           title: "WeemDesk: Uzaktan Destek Sistemi",          description: "Canlı PC izleme, bağlantı tünelleri ve kapsamlı cihaz yönetimi ile uzaktan destek süreçlerinizi optimize edin.",          phoneOne: {
-            imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-looking-green-screen-monitor-smartphone-sitting-desk-business-office-late-night-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime_482257-13377.jpg",            imageAlt: "WeemDesk live PC monitoring interface"},
+            imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-looking-green-screen-monitor-smartphone-sitting-desk-business-office-late-night-freelancer-watching-desktop-monitor-display-with-green-mockup-chroma-key-working-overtime_482257-13377.jpg",            imageAlt: "WeemDesk live PC monitoring interface"},
           phoneTwo: {
             imageSrc: "http://img.b2bpic.net/free-photo/abstract-techno-low-poly-background-with-dark-connecting-dots-lines_1048-6127.jpg",            imageAlt: "WeemDesk remote connection tunnel"}
         },
@@ -219,7 +219,6 @@ export default function LandingPage() {
         {
           text: "Hemen Başlayın",          href: "#start"},
       ]}
-      buttonAnimation="slide-up"
     />
   </div>
 
