@@ -42,7 +42,7 @@ export default function LandingPage() {
         {
           name: "Integrations",          id: "#integrations"},
         {
-          name: "Testimonials",          id: "#testimonials"},
+          name: "Testimonial s",          id: "#testimonials"},
         {
           name: "Contact",          id: "#contact"},
       ]}
