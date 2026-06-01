@@ -2,147 +2,153 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
-import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
-import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
-import ContactCTA from '@/components/sections/contact/ContactCTA';
+import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
+import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
+import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
+import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
+import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
+import { CheckCircle, Shield } from "lucide-react";
 
-export default function CozumlerPage() {
+export default function SolutionsPage() {
   return (
     <ThemeProvider
-        defaultButtonVariant="text-stagger"
-        defaultTextAnimation="background-highlight"
-        borderRadius="pill"
-        contentWidth="mediumLarge"
-        sizing="largeSmallSizeMediumTitles"
-        background="aurora"
-        cardStyle="gradient-radial"
-        primaryButtonStyle="radial-glow"
-        secondaryButtonStyle="radial-glow"
-        headingFontWeight="bold"
+      defaultButtonVariant="directional-hover"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="soft"
+      contentWidth="medium"
+      sizing="medium"
+      background="radialGradient"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="diagonal-gradient"
+      secondaryButtonStyle="solid"
+      headingFontWeight="bold"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-          <NavbarLayoutFloatingOverlay
+          <NavbarLayoutFloatingInline
             navItems={[
-              { name: "Home", href: "/" },
-              { name: "AI Copilot", href: "/#ai-copilot" },
-              { name: "Features", href: "/#features" },
-              { name: "Analytics", href: "/#analytics" },
-              { name: "Integrations", href: "/#integrations" },
-              { name: "Testimonials", href: "/#testimonials" },
-              { name: "Contact", href: "/#contact" },
-              { name: "Çözümler", href: "/cozumler" }
+              { name: "Anasayfa", id: "/" },
+              { name: "Hakkımızda", id: "/hakkimizda" },
+              { name: "Çözümler", id: "/cozumler" },
+              { name: "İletişim", id: "/iletisim" },
+              { name: "Blog", id: "/blog" },
+              { name: "Kariyer", id: "/kariyer" },
+              { name: "Gizlilik", id: "/gizlilik" },
+              { name: "Şartlar", id: "/sartlar" }
             ]}
             logoSrc="http://img.b2bpic.net/free-photo/blue-neon-light-dark-backdrop_23-2147881452.jpg"
-            logoAlt="Weem Flow Logo"
-            brandName="Weem Flow"
-            button={{ text: "Giriş Yap", href: "#login" }}
+            logoAlt="Çözüm Şirketi Logo"
+            brandName="Çözüm Şirketi"
+            button={{ text: "Hemen Başlayın", href: "#contact" }}
           />
         </div>
 
         <div id="hero" data-section="hero">
-          <HeroSplitDualMedia
-            background={{ variant: "sparkles-gradient" }}
-            title="Endüstriye Özel Çözümlerimiz"
-            description="Weem Flow, farklı sektörlerin benzersiz ihtiyaçlarına yönelik kapsamlı ve entegre çözümler sunar. İş akışlarınızı optimize edin, verimliliği artırın."
-            tag="Sektör Lideri Çözümler"
+          <HeroSplitDoubleCarousel
+            title="Geleceğin Teknolojileriyle Tanışın"
+            description="Sektör lideri çözümlerimizle işinizi bir üst seviyeye taşıyın. İnovasyon ve verimlilik odaklı yaklaşımımızla fark yaratın."
+            background={{ variant: "animated-grid" }}
+            leftCarouselItems={[
+              { imageSrc: "http://img.b2bpic.net/free-photo/abstract-cityscape-with-glowing-lines-futuristic-urban-landscape_23-2150974673.jpg", imageAlt: "Futuristic cityscape with glowing lines" },
+              { imageSrc: "http://img.b2bpic.net/free-photo/cyber-security-analyst-command-center_23-2152000892.jpg", imageAlt: "Cyber security analyst command center" }
+            ]}
+            rightCarouselItems={[
+              { imageSrc: "http://img.b2bpic.net/free-photo/digital-transformation-concept-made-with-gears_23-2149178553.jpg", imageAlt: "Digital transformation concept" },
+              { imageSrc: "http://img.b2bpic.net/free-photo/abstract-futuristic-background-with-lines-dots_23-2149177699.jpg", imageAlt: "Abstract futuristic background" }
+            ]}
+            tag="Yenilikçi Çözümler"
             buttons={[
-              { text: "Tüm Çözümleri Keşfet", href: "#solutions" },
+              { text: "Çözümlerimizi Keşfet", href: "#solutions" }
             ]}
-            mediaItems={[
-              { imageSrc: "http://img.b2bpic.net/free-photo/multiethnic-team-business-meeting_23-2148970719.jpg", imageAlt: "Diverse team collaborating in a futuristic office" },
-              { imageSrc: "http://img.b2bpic.net/free-photo/group-diverse-people-having-business-meeting_53876-25916.jpg", imageAlt: "Digital interface overlaying a business meeting" }
-            ]}
-            mediaAnimation="opacity"
-            rating={5}
-            ratingText="4.9/5 Yıldız Memnuniyet"
           />
         </div>
 
         <div id="solutions" data-section="solutions">
-          <FeatureCardSix
+          <FeatureCardTen
             animationType="slide-up"
             textboxLayout="default"
             useInvertedBackground={true}
-            title="İşletmenize Özel Esnek Çözümler"
-            description="Sektörünüz ne olursa olsun, Weem Flow ile operasyonel mükemmelliğe ulaşın."
+            title="Çözümlerimiz"
+            description="Yenilikçi çözümlerimizle dijital dönüşümünüzü hızlandırın."
             features={[
               {
-                title: "Teknik Servis Çözümleri",                description: "Uzaktan destek, saha operasyonları ve cihaz yönetimi ile teknik servis süreçlerinizi basitleştirin.",                imageSrc: "http://img.b2bpic.net/free-photo/engineer-working-server-room-digital-data_23-2150247656.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/teknik-servis" }]
+                title: "Açık Kaynak Gelişimi",                description: "Herkesin katılabileceği ve katkıda bulunabileceği şeffaf bir geliştirme süreci.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/view-planet-earth-elements-this-image-furnished-by-nasa_1170-3882.jpg" },
+                items: [{ icon: CheckCircle, text: "Topluluk Destekli" }],
+                reverse: false
               },
               {
-                title: "IT Departmanları İçin",                description: "Ağ yönetimi, siber güvenlik ve helpdesk otomasyonu ile IT operasyonlarınızı güçlendirin.",                imageSrc: "http://img.b2bpic.net/free-photo/young-man-wearing-virtual-reality-headset-playing-cyber-arena-game_23-2150961817.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/it-departments" }]
+                title: "Blockchain Entegrasyonu",                description: "Güvenli ve şeffaf işlemler için merkeziyetsiz teknoloji ile entegrasyon.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/blockchain-concept-with-connected-cubes_1048-11883.jpg" },
+                items: [{ icon: CheckCircle, text: "Güvenli İşlemler" }],
+                reverse: true
               },
               {
-                title: "ERP Destek Yönetimi",                description: "ERP entegrasyonu, veri senkronizasyonu ve otomatik raporlama ile iş süreçlerinizi optimize edin.",                imageSrc: "http://img.b2bpic.net/free-photo/data-visualization-with-system-stats_23-2149301037.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/erp-support" }]
-              },
-              {
-                title: "Dealer Ağları İçin",                description: "Bayi iletişimi, stok yönetimi ve sipariş takibi ile bayi ağınızı merkezi hale getirin.",                imageSrc: "http://img.b2bpic.net/free-photo/dealer-group_23-2148117769.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/dealer-networks" }]
-              },
-              {
-                title: "Saha Operasyonları",                description: "Mobil saha ekiplerini yönetin, görev atamalarını otomatikleştirin ve gerçek zamanlı takip yapın.",                imageSrc: "http://img.b2bpic.net/free-photo/workers-uniform-looking-tablet_23-2148197771.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/field-operations" }]
-              },
-              {
-                title: "Kurumsal Destek Merkezleri",                description: "Yüksek hacimli destek taleplerini yönetin, SLA'ları optimize edin ve müşteri memnuniyetini artırın.",                imageSrc: "http://img.b2bpic.net/free-photo/customer-service-concept-with-person-headset_23-2148780708.jpg",                buttons: [{ text: "Detaylar", href: "/cozumler/enterprise-support-centers" }]
+                title: "Yapay Zeka Destekli Analiz",                description: "Veri odaklı kararlar için gelişmiş yapay zeka algoritmaları ve analitikler.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/abstract-techno-low-poly-background-with-connecting-dots_1048-6125.jpg" },
+                items: [{ icon: CheckCircle, text: "Akıllı Analiz" }],
+                reverse: false
               }
             ]}
           />
         </div>
 
-        <div id="contact-cta" data-section="contact-cta">
-          <ContactCTA
+        <div id="about-testimonial" data-section="about-testimonial">
+          <TestimonialAboutCard
+            tag="Müşteri Deneyimi"
+            title="Müşterilerimiz Neden Bizi Tercih Ediyor?"
+            description="İş ortaklarımızın başarı hikayeleri, çözüm odaklı yaklaşımımızın en güzel kanıtı."
+            subdescription="Şirketimiz, müşterilerinin ihtiyaçlarına özel çözümler sunarak dijital dönüşüm yolculuklarında onlara rehberlik eder."
+            icon={Shield}
+            imageSrc="http://img.b2bpic.net/free-photo/businessman-with-laptop-cyber-security-concept_23-2149176465.jpg"
+            imageAlt="Businessman with laptop, cyber security concept"
+            mediaAnimation="opacity"
             useInvertedBackground={false}
+          />
+        </div>
+
+        <div id="contact" data-section="contact">
+          <ContactSplit
+            tag="Bize Ulaşın"
+            title="Çözümlerimiz Hakkında Daha Fazla Bilgi Edinin"
+            description="İhtiyaçlarınıza özel çözümlerimizle ilgili uzmanlarımızdan destek almak için bizimle iletişime geçin."
             background={{ variant: "sparkles-gradient" }}
-            tag="Sizin İçin Buradayız"
-            title="İşletmenize Özel Çözümler Keşfedin"
-            description="İhtiyaçlarınıza en uygun çözümü bulmak için uzman ekibimizle iletişime geçin."
-            buttons={[
-              { text: "Bize Ulaşın", href: "/#contact" },
-            ]}
+            useInvertedBackground={true}
+            imageSrc="http://img.b2bpic.net/free-photo/abstract-connection-dots-lines-blue-background-ai-generated_23-2150821008.jpg"
+            imageAlt="Abstract connection dots and lines on blue background"
+            mediaAnimation="opacity"
+            inputPlaceholder="E-posta adresinizi girin"
+            buttonText="Gönder"
+            termsText="Kaydol düğmesine tıklayarak, Şartlar ve Koşullarımızı kabul ettiğinizi onaylamış olursunuz."
           />
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterMedia
-            videoSrc="http://img.b2bpic.net/free-photo/glowing-smoke-made-particles-black_1048-11996.jpg"
-            videoAriaLabel="Futuristic data stream animation loop"
+          <FooterBaseCard
             logoSrc="http://img.b2bpic.net/free-photo/blue-neon-light-dark-backdrop_23-2147881452.jpg"
-            logoAlt="Weem Flow Logo"
-            logoText="Weem Flow"
+            logoAlt="Çözüm Şirketi Logo"
+            logoText="Çözüm Şirketi"
             columns={[
               {
-                title: "Ürün",                items: [
-                  { label: "AI Copilot", href: "/#ai-copilot" },
-                  { label: "Özellikler", href: "/#features" },
-                  { label: "Analitik", href: "/#analytics" },
-                  { label: "Entegrasyonlar", href: "/#integrations" },
-                  { label: "Çözümler", href: "/cozumler" }
-                ],
+                title: "Ürünler",                items: [
+                  { label: "Yapay Zeka", href: "#ai" },
+                  { label: "Blockchain", href: "#blockchain" },
+                  { label: "Veri Analizi", href: "#data-analysis" }
+                ]
               },
               {
                 title: "Şirket",                items: [
-                  { label: "Hakkımızda", href: "#about" },
-                  { label: "Kariyer", href: "#careers" },
-                  { label: "Basın", href: "#press" },
-                ],
+                  { label: "Hakkımızda", href: "/hakkimizda" },
+                  { label: "Kariyer", href: "/kariyer" },
+                  { label: "Basın", href: "#press" }
+                ]
               },
               {
                 title: "Destek",                items: [
                   { label: "Yardım Merkezi", href: "#help" },
-                  { label: "API Belgeleri", href: "#api-docs" },
-                  { label: "İletişim", href: "/#contact" },
-                ],
-              },
-              {
-                title: "Yasal",                items: [
-                  { label: "Gizlilik Politikası", href: "#privacy" },
-                  { label: "Hizmet Şartları", href: "#terms" },
-                ],
-              },
+                  { label: "İletişim", href: "/iletisim" }
+                ]
+              }
             ]}
-            copyrightText="© 2035 Weem Flow. Tüm hakları saklıdır."
+            copyrightText="© 2024 Çözüm Şirketi. Tüm hakları saklıdır."
           />
         </div>
       </ReactLenis>
